@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="renderer" content="webkit">
+        <!-- 告诉IE使用目前最新的布局引擎 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>主页</title>
+        <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../dist/css/pages/index.css">
+    </head>
+    <body>
+        <div id="container">
+            <div class="header" id="header">
+                <div class="title">中科院智慧后勤平台资产定位系统</div>
+                <div class="operations">
+                    <a href="javascript:void(0);" class="about-btn">关于</a>
+                    <a href="javascript:void(0);" class="help-btn">帮助</a>
+                    <a href="javascript:void(0);" class="logout-btn" id="logout-btn">退出</a>
+                </div>
+            </div>
+            <div class="main" id="main">
+                <div class="left-nav-wrapper" id="left-nav-wrapper">
+                    <ul class="left-nav" id="left-nav">
+                        <li role="presentation" class="nav nav-pills nav-stacked">
+                            <img src="../images/home.png" class="nav-img" />
+                            <a href="javascript:void(0);" class="nav-text" id="home-nav">主页</a>
+                        </li>
+                        <li role="presentation" class="nav nav-pills nav-stacked">
+                            <img src="../images/query.png" class="nav-img" />
+                            <a href="javascript:void(0);" class="nav-text" id="query-nav">资产查询</a>
+                        </li>
+                        <li role="presentation" class="nav nav-pills nav-stacked">
+                            <img src="../images/bind.png" class="nav-img" />
+                            <a href="javascript:void(0);" class="nav-text" id="bind-nav">资产标签绑定</a>
+                        </li>
+                        <li role="presentation" class="nav nav-pills nav-stacked">
+                            <img src="../images/count.png" class="nav-img" />
+                            <a href="javascript:void(0);" class="nav-text" id="count-nav">资产盘点</a>
+                        </li>
+                        <li role="presentation" class="nav nav-pills nav-stacked">
+                            <img src="../images/position.png" class="nav-img" />
+                            <a href="javascript:void(0);" class="nav-text" id="position-nav">资产位置</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-panel">
+                    <div class="info-panel">
+                        <div class="system-notice">系统通知<span class="value">54</span></div>
+                        <div class="task-count">待办任务<span class="value">5</span></div>
+                    </div>
+
+                    <div class="notice-panel">
+                        <div class="notice-panel-header">
+                            <div id="all-notice-checkbox-wrapper" class="all-notice-checkbox-wrapper">
+                                <div class="notice-checkbox" id="all-notice-checkbox"></div>
+                                <span class="notice-checkbox-label" id="all-notice-checkbox-label">选中所有记录</span>
+                            </div>
+                            <input type="button" class="notice-clear-btn" id="notice-clear-btn" value="清除" />
+                        </div>
+                        <div class="notice-panel-content">
+                            <div class="notice-item">
+                                <div class="notice-check-box-wrapper" id="notice-checkbox-wrapper-1">   <!-- 这里记得填数据，notice-checkbox-后的数字为当前notice的id -->
+                                    <input type="hidden" class="notice-id" value="1" /> <!-- 这里记得填数据，要能唯一标识某条通知 -->
+                                    <div class="notice-checkbox" id="notice-checkbox-1"></div>
+                                    <span class="notice-checkbox-label" id="notice-checkbox-label-1">位置变更通知－－－质量测试仪</span>
+                                </div>
+                                <div class="notice-operations">
+                                    <a href="javascript:void(0);" class="notice-operation-btn notice-detail-btn">查看</a>
+                                    <a href="javascript:void(0);" class="notice-operation-btn notice-delete-btn">删除</a>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <div class="notice-check-box-wrapper" id="notice-checkbox-wrapper-2">   <!-- 这里记得填数据，notice-checkbox-后的数字为当前notice的id -->
+                                    <input type="hidden" class="notice-id" value="2" /> <!-- 这里记得填数据，要能唯一标识某条通知 -->
+                                    <div class="notice-checkbox" id="notice-checkbox-2"></div>
+                                    <span class="notice-checkbox-label" id="notice-checkbox-label-2">位置变更通知－－－计算机</span>
+                                </div>
+                                <div class="notice-operations">
+                                    <a href="javascript:void(0);" class="notice-operation-btn notice-detail-btn">查看</a>
+                                    <a href="javascript:void(0);" class="notice-operation-btn notice-delete-btn">删除</a>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <div class="notice-check-box-wrapper" id="notice-checkbox-wrapper-3">   <!-- 这里记得填数据，notice-checkbox-后的数字为当前notice的id -->
+                                    <input type="hidden" class="notice-id" value="3" /> <!-- 这里记得填数据，要能唯一标识某条通知 -->
+                                    <div class="notice-checkbox" id="notice-checkbox-3"></div>
+                                    <span class="notice-checkbox-label" id="notice-checkbox-label-3">维修进度更新－－－分析仪</span>
+                                </div>
+                                <div class="notice-operations">
+                                    <a href="javascript:void(0);" class="notice-operation-btn notice-detail-btn">查看</a>
+                                    <a href="javascript:void(0);" class="notice-operation-btn notice-delete-btn">删除</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-panel">
+                        <div class="task-panel-header">
+                            <img src="../images/task.png" class="task-img" />
+                            <div class="task-panel-title">任务</div>
+                        </div>
+                        <div class="task-list">
+                            <div class="task-item">
+                                <div class="department">部门1</div>
+                                <div class="desc">设备盘点</div>
+                            </div>
+                            <div class="task-item">
+                                <div class="department">部门2</div>
+                                <div class="desc">设备盘点</div>
+                            </div>
+                            <div class="task-item">
+                                <div class="department">部门3</div>
+                                <div class="desc">设备领用</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="../lib/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../lib/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../src/plugins/checkbox/index.js"></script>
+    <script type="text/javascript" src="../src/pages/index.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,238 @@
+#main {
+  background-color: #f2f2f2;
+  font-size: 0;
+}
+#main .right-panel {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+}
+/* 常见CSS3属性混合*/
+#header {
+  height: 80px;
+  background-color: #363636;
+  line-height: 80px;
+  font-size: 0;
+}
+#header .title {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-left: 100px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 28px;
+  color: #00ccff;
+}
+#header .operations {
+  float: right;
+}
+#header .operations a {
+  color: #00ccff;
+  font-size: 15px;
+  margin-right: 40px;
+}
+#header .operations a.help-btn {
+  margin-right: 80px;
+}
+#header .operations a.logout-btn {
+  margin-right: 80px;
+}
+#left-nav-wrapper {
+  display: inline-block;
+  font-size: 14px;
+}
+#left-nav-wrapper #left-nav {
+  background-color: #999999;
+  padding-left: 0;
+  width: 200px;
+  height: 700px;
+}
+#left-nav-wrapper #left-nav .nav {
+  padding-left: 30px;
+  line-height: 56px;
+  height: 56px;
+  cursor: pointer;
+}
+#left-nav-wrapper #left-nav .nav:hover {
+  background-color: #00ccff;
+}
+#left-nav-wrapper #left-nav .nav:hover .nav-text {
+  color: #fff;
+}
+#left-nav-wrapper #left-nav .nav .nav-img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 18px;
+  vertical-align: top;
+  margin-right: 10px;
+}
+#left-nav-wrapper #left-nav .nav .nav-text {
+  color: #fff;
+}
+#left-nav-wrapper #left-nav .nav .nav-text:hover {
+  text-decoration: none;
+}
+#main .right-panel .info-panel {
+  padding-top: 30px;
+}
+#main .right-panel .info-panel .system-notice,
+#main .right-panel .info-panel .task-count {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background-color: #00bcd5;
+  color: #fff;
+  font-size: 18px;
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 20px;
+  float: left;
+}
+#main .right-panel .info-panel .system-notice .value,
+#main .right-panel .info-panel .task-count .value {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+  margin-left: 10px;
+}
+#main .right-panel .info-panel .system-notice {
+  margin-left: 140px;
+}
+#main .right-panel .info-panel .task-count {
+  margin-left: 270px;
+}
+#main .right-panel .notice-panel {
+  display: inline-block;
+  width: 450px;
+  margin-top: 100px;
+  border: 1px solid #e4e4e4;
+  font-size: 14px;
+}
+#main .right-panel .notice-panel .notice-panel-header {
+  border-bottom: 1px solid #e4e4e4;
+  height: 50px;
+  background-color: #f2f2f2;
+  line-height: 50px;
+  padding-left: 20px;
+}
+#main .right-panel .notice-panel .notice-panel-header .all-notice-checkbox-wrapper {
+  display: inline-block;
+  cursor: pointer;
+}
+#main .right-panel .notice-panel .notice-panel-header .all-notice-checkbox-wrapper .notice-checkbox {
+  display: inline-block;
+  margin-right: 20px;
+}
+#main .right-panel .notice-panel .notice-panel-header .all-notice-checkbox-wrapper .notice-checkbox img {
+  vertical-align: top;
+  margin-top: 17.5px;
+}
+#main .right-panel .notice-panel .notice-panel-header .all-notice-checkbox-wrapper .notice-checkbox-label {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+}
+#main .right-panel .notice-panel .notice-panel-header .notice-clear-btn {
+  display: block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border: 0px;
+  padding: 0px;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  text-align: center;
+  display: inline-block;
+  float: right;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+#main .right-panel .notice-panel .notice-panel-header .notice-clear-btn:active {
+  background-color: #CFCFCF;
+}
+#main .right-panel .notice-panel .notice-panel-content {
+  background-color: #fff;
+}
+#main .right-panel .notice-panel .notice-panel-content .notice-item {
+  padding-left: 20px;
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid #e4e4e4;
+}
+#main .right-panel .notice-panel .notice-panel-content .notice-item .notice-check-box-wrapper {
+  display: inline-block;
+}
+#main .right-panel .notice-panel .notice-panel-content .notice-item .notice-check-box-wrapper .notice-checkbox {
+  display: inline-block;
+  margin-right: 20px;
+}
+#main .right-panel .notice-panel .notice-panel-content .notice-item .notice-check-box-wrapper .notice-checkbox img {
+  vertical-align: top;
+  margin-top: 32.5px;
+}
+#main .right-panel .notice-panel .notice-panel-content .notice-item .notice-check-box-wrapper .notice-checkbox-label {
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  width: 250px;
+}
+#main .right-panel .notice-panel .notice-panel-content .notice-item .notice-operations {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+}
+#main .right-panel .notice-panel .notice-panel-content .notice-item .notice-operations a {
+  color: #00ccff;
+}
+#main .right-panel .notice-panel .notice-panel-content .notice-item .notice-operations .notice-detail-btn {
+  margin-right: 10px;
+}
+#main .right-panel .task-panel {
+  margin-top: 100px;
+  vertical-align: top;
+  margin-left: 90px;
+  display: inline-block;
+  background-color: #fff;
+  width: 270px;
+  font-size: 14px;
+}
+#main .right-panel .task-panel .task-panel-header {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+#main .right-panel .task-panel .task-panel-header .task-img {
+  width: 12px;
+  height: 12px;
+  margin-top: 9px;
+  vertical-align: top;
+}
+#main .right-panel .task-panel .task-panel-header .task-panel-title {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 12px;
+}
+#main .right-panel .task-panel .task-list .task-item {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 10px;
+}
+#main .right-panel .task-panel .task-list .task-item .department {
+  display: inline-block;
+  margin-right: 10px;
+}
+#main .right-panel .task-panel .task-list .task-item .desc {
+  display: inline-block;
+}

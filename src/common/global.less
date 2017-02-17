@@ -1,0 +1,240 @@
+
+// 全局设置
+@content-width: 1024px;
+@gray-body-bg-color: #F6F6F6;
+@body-bg-color: #ebebeb;
+
+// 轮播图宽高比
+@banner-size-rate: 2.757;
+
+// 全局颜色
+@red-color: #DC4031;
+@light-red: #F1190D;
+@deep-red: #9E302B;
+@orange-color: #F5A623;
+@light-gray: #CFCFCF;
+@deep-gray: #7f7f7f;
+@green-color: #557D27;
+@theme-color: @red-color;
+
+// 背景色
+@bg-color: #181B25;
+@light-bg-color: #3E3C4A;
+
+// 前景色
+@deep-fg-color: #0C0D1C;
+@light-fg-color: #20202E;
+@fg-color: @light-fg-color;
+
+// 字体样式
+@font-size: 14px;
+@red-font-color: @light-red;
+@light-gray-font-color: #A7A7A7;
+@deep-gray-font-color: #8E8E8E;
+@gray-font-color: @light-gray-font-color;
+@orange-font-color: @orange-color;
+@black-font-color: #4A4A4A;
+@green-font-color: @green-color;
+@white-font-color: #fff;
+@font-color: @gray-font-color;
+
+// 页面头部
+@header-color: @theme-color;
+@header-height: 1.42rem;
+@header-font-size: @font-size + 0.05rem;
+
+// 边框样式
+@border-width: 0.02rem;
+@deep-border-color: #bcbcbc;
+@light-border-color: #dedede;
+@border-color: @light-border-color;
+@border-radius: 0.1rem;
+@red-border-color: @red-color;
+@gray-border-color: @gray-font-color;
+@black-border-color: @black-font-color;
+
+// 按钮样式
+@btn-bg-color: @red-color;
+@btn-active-bg-color: @light-gray;
+@btn-disable-bg-color: #c7c7c7;
+@btn-font-color: #fff;
+@btn-font-size: @font-size + 0.03rem;
+@btn-font-weight: normal;
+@btn-border-radius: @border-radius;
+@btn-border-width: @border-width;
+@btn-border-color: @theme-color;
+@btn-gray-border-color: @gray-font-color;
+@btn-gray-bg-color: #c4c4c4;
+@btn-gray-hover-bg-color: #dbdbdb;
+@btn-gray-active-bg-color: #cacaca;
+@btn-black-bg-color: #080618;
+@btn-black-active-bg-color: #3A3947;
+@btn-red-bg-color: @red-color;
+@btn-red-active-bg-color: #A42519;
+@btn-disabled-color: @btn-gray-active-bg-color;
+
+// 列表样式 
+@list-active-bg-color: @btn-gray-hover-bg-color;
+
+// 链接样式
+@link-active-bg-color: #4C4D61;
+
+// 输入框样式
+@input-font-size: @font-size - 0.15rem;
+@input-border-radius: 0.1rem;
+@input-border-color: @border-color;
+@input-border-width: @border-width;
+@input-vertical-padding: 0;
+@input-horizontal-padding: 0.2rem;
+
+// 表格样式
+@table-border-color: @border-color;
+@table-border-width: @border-width;
+@table-header-font-color: @gray-font-color;
+
+// 其他样式
+@label-font-color: @gray-font-color;
+
+
+.btn (@btn-width: 2rem, @btn-height: 0.6rem, @btn-font-size: @btn-font-size, @btn-border-radius: @btn-border-radius, @btn-font-color: @btn-font-color, @btn-bg-color: @btn-bg-color, @btn-font-weight: @btn-font-weight){
+    outline: none;
+    display: block;
+    width: @btn-width;
+    height: @btn-height;
+    line-height: @btn-height;
+    background-color: @btn-bg-color;
+    font-weight: @btn-font-weight;
+    font-size: @btn-font-size;
+    color: @btn-font-color;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-align: center;
+    border: 0px;
+    padding: 0px;
+    -webkit-appearance:none;
+    outline:none;
+
+    .border-radius(@btn-border-radius);
+
+    &:active {
+        background-color: @btn-active-bg-color;
+    }
+}
+
+.white-btn (@btn-width: 2rem, @btn-height: 0.6rem, @btn-font-size: @btn-font-size, @btn-border-radius: @btn-border-radius, @btn-font-color: @theme-color, @btn-font-weight: @btn-font-weight) {
+    .btn (@btn-width: @btn-width, @btn-height: @btn-height, @btn-font-size: @btn-font-size, @btn-border-radius: @btn-border-radius, @btn-font-color: @btn-font-color, @btn-bg-color: #fff, @btn-font-weight: @btn-font-weight);
+
+    border: @btn-border-width solid @theme-color;
+    
+    &:active {
+        background-color: @theme-color;
+        color: #fff;
+    }
+}
+
+.gray-btn (@btn-width: 2rem, @btn-height: 0.6rem, @btn-font-size: @btn-font-size, @btn-border-radius: @btn-border-radius, @btn-font-color: @theme-color, @btn-font-weight: @btn-font-weight) {
+    .btn (@btn-width: @btn-width, @btn-height: @btn-height, @btn-font-size: @btn-font-size, @btn-border-radius: @btn-border-radius, @btn-font-color: @gray-font-color, @btn-bg-color: #fff, @btn-font-weight: @btn-font-weight);
+
+    border: @btn-border-width solid @btn-gray-border-color;
+    
+    &:active {
+        color: #fff;
+        border: @btn-border-width solid #fff;
+        background-color: @btn-gray-active-bg-color;
+    }
+}
+
+.input (@width: 3rem, @height: 0.3rem, @input-font-size: @input-font-size, @border-radius: @input-border-radius) {
+    .border-radius(@border-radius);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background-color: transparent;
+    border: solid @input-border-width @border-color;
+    width: @width - @input-horizontal-padding * 2;
+    height: @height - @input-vertical-padding;
+    outline: none;
+    -webkit-appearance:none;
+    font-size: @input-font-size;
+    padding: @input-vertical-padding @input-horizontal-padding;
+}
+
+.selector(@width: 2rem, @height: 0.5rem, @font-size: @font-size, @font-color: @font-color) {
+    background-color: transparent;
+    border-color: transparent;
+    -webkit-appearance: none;
+    height: @height;
+    width: @width;
+}
+
+.label-img (@label-width: 0, @label-height: 0, @img-width: 0, @img-height: 0) {
+    width: @img-width;
+    height: @img-height;
+    margin-top: (@label-height - @img-height) / 2;
+    margin-left: (@label-width - @img-width) / 2;
+}
+
+/* 常见CSS3属性混合*/
+.transition(@type: all; @time: .3s; @ease-type: ease;) {
+-webkit-transition: @type @time @ease-type;
+   -moz-transition: @type @time @ease-type;
+    -ms-transition: @type @time @ease-type;
+     -o-transition: @type @time @ease-type;
+        transition: @type @time @ease-type;
+}
+
+.cube() {
+   -webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
+}
+
+.rotate(@deg) {
+    .cube();
+    transform:rotate(@deg);
+    -webkit-transform:rotate(@deg);
+    -moz-transform:rotate(@deg);
+    -o-transform:rotate(@deg);
+    -ms-transform:rotate(@deg);
+}
+
+.scale(@scale-num) {
+    .cube();
+    transform:scale(@scale-num);
+    -webkit-transform:scale(@scale-num);
+    -moz-transform:scale(@scale-num);
+    -o-transform:scale(@scale-num);
+    -ms-transform:scale(@scale-num);
+}
+
+.border-radius (@radius: @btn-border-radius) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000) {
+    box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+}
+
+.opacity (@opa: 0.5){
+    -moz-opacity:@opa;
+    -khtml-opacity:@opa;
+    opacity: @opa;
+}
+
+.opacity-transition (@transition-duration) {
+    -webkit-transition: opacity @transition-duration linear;
+    -moz-transition: opacity @transition-duration linear;
+    -o-transition: opacity @transition-duration linear;
+    transition: opacity @transition-duration linear;
+}
+
+.inline-block() {
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+}
+

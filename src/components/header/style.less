@@ -1,0 +1,39 @@
+@import "../../common/global.less";
+
+#header {
+    @header-height: 80px;
+    @header-font-color: rgb(0, 204, 255);
+
+    height: @header-height;
+    background-color: rgba(54, 54, 54, 1);
+    line-height: @header-height;
+    font-size: 0;
+
+    .title {
+        .inline-block();
+
+        margin-left: 100px;
+        height: @header-height;
+        line-height: @header-height;
+        font-size: 28px;
+        color: @header-font-color;
+    }
+
+    .operations {
+        float: right;
+
+        a {
+            color: @header-font-color;
+            font-size: 15px;
+            margin-right: 40px;
+
+            &.help-btn {
+                margin-right: 80px;
+            }
+
+            &.logout-btn {
+                margin-right: 80px;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import "../../common/global.less";
+
+#left-nav-wrapper {
+    display: inline-block;
+    font-size: 14px;
+
+    #left-nav {
+        background-color: rgb(153, 153, 153);
+        padding-left: 0;
+        width: 200px;
+        height: 700px;
+
+        .nav {
+            @nav-height: 56px;
+
+            padding-left: 30px;
+            line-height: @nav-height;
+            height: @nav-height;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(0, 204, 255);
+
+                .nav-text {
+                    color: #fff;
+                }
+            }
+
+            .nav-img {
+                @img-size: 20px;
+
+                display: inline-block;
+                width: @img-size;
+                height: @img-size;
+                margin-top: (@nav-height - @img-size) / 2;
+                vertical-align: top;
+                margin-right: 10px;
+            }
+
+            .nav-text {
+                color: #fff;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
