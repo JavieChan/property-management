@@ -1,10 +1,22 @@
-#main {
-    background-color: rgba(242, 242, 242, 1);
-    font-size: 0;
+body {
+    @body-width: 1500px;
 
-    .right-panel {
-        display: inline-block;
-        vertical-align: top;
-        margin-left: 30px;
+    min-width: @body-width;
+
+    #container {
+        min-width: @body-width;
+
+        #main {
+            background-color: rgba(242, 242, 242, 1);
+            font-size: 0;
+            min-width: @body-width;
+
+            .right-panel {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 100px;
+            }
+        }
     }
 }
+
