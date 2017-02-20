@@ -6,6 +6,8 @@
 
 #main {
     .right-panel {
+        @item-border-color: rgba(228, 228, 228, 1);
+
         .info-panel {
             padding-top: 30px;
 
@@ -42,7 +44,6 @@
 
         .notice-panel {
             @item-padding-left: 20px;
-            @item-border-color: rgba(228, 228, 228, 1);
 
             display: inline-block;
             width: 450px;
@@ -151,6 +152,7 @@
             background-color: #fff;
             width: 270px;
             font-size: 14px;
+            border: 1px solid @item-border-color;
 
             .task-panel-header {
                 @task-panel-header-height: 30px;
@@ -177,11 +179,17 @@
 
             .task-list {
                 .task-item {
-                    @task-item-height: 45px;
+                    @task-item-height: 50px;
 
                     height: @task-item-height;
                     line-height: @task-item-height;
                     padding-left: @item-padding-left;
+
+                    &:hover {
+                        background-color: #92cd18;
+                        cursor: pointer;
+                        color: #fff;
+                    }
 
                     .department {
                         display: inline-block;
