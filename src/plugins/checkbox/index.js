@@ -26,7 +26,7 @@
     };
 
     function CheckBox(options) {
-        me = this;
+        var me = this;
 
         me.options = $.extend({}, _defaultConfigs, options);
         me.init()
@@ -34,7 +34,7 @@
     }
 
     CheckBox.prototype.init = function() {
-        me = this
+        var me = this
 
         me.selected = false
 
@@ -48,7 +48,7 @@
     };
 
     CheckBox.prototype.bindEvents = function() {
-        me = this
+        var me = this
 
         me.$el.checkbox.click(function(e) {
             me.toggle();
@@ -60,7 +60,7 @@
     };
 
     CheckBox.prototype.on = function(eventName, handler) {
-        me = this
+        var me = this
 
         if(!me.events[eventName]) {
             me.events[eventName] = [];
@@ -70,7 +70,7 @@
     };
 
     CheckBox.prototype.trigger = function(eventName, args) {
-        me = this
+        var me = this
 
         if(!me.events[eventName]) {
             return false;
@@ -90,7 +90,7 @@
     };
 
     CheckBox.prototype.toggle = function() {
-        me = this
+        var me = this
 
         if(me.selected == false) {
             me.$el.checkbox.find(".checkbox-img").attr("src", me.options.selectedImg);
@@ -105,14 +105,14 @@
     };
 
     CheckBox.prototype.checked = function() {
-        me = this
+        var me = this
 
         me.selected = true;
         me.$el.checkbox.find(".checkbox-img").attr("src", me.options.selectedImg);
     };
 
     CheckBox.prototype.unchecked = function() {
-        me = this
+        var me = this
 
         me.selected = false
         me.$el.checkbox.find(".checkbox-img").attr("src", me.options.unSelectedImg)
