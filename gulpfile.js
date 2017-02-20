@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var clean = require('gulp-clean');
 var concat = require('gulp-concat');
-var coffeeify = require('gulp-coffeeify');
+//var coffeeify = require('gulp-coffeeify');
 var less = require('gulp-less');
 var minifycss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
@@ -9,7 +9,7 @@ var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
 var cached = require('gulp-cached');
 var merge = require('merge-stream');
-var copy = require('gulp-contrib-copy');
+//var copy = require('gulp-contrib-copy');
 
 // 合并less文件
 // gulp.task('merge-less', function(cb) {
