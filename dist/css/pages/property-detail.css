@@ -83,12 +83,12 @@ body #container #main .right-panel {
 }
 #main .right-panel .property-detail-wrapper {
   padding-top: 30px;
+  font-size: 14px;
+  width: 810px;
 }
 #main .right-panel .property-detail-wrapper .detail-panel {
-  width: 810px;
   border: 1px solid #e4e4e4;
   background: #fff;
-  font-size: 14px;
 }
 #main .right-panel .property-detail-wrapper .detail-panel .detail-panel-header {
   background: #999;

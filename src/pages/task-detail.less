@@ -1,0 +1,101 @@
+
+@import "../common/common.less";
+@import "../components/header/style.less";
+@import "../components/left-nav/style.less";
+
+#main {
+  .right-panel {
+
+    .task-detail-wrapper{
+      padding-top: 30px;
+      font-size: 14px;
+      width: 810px;
+
+      .task-detail-panel{
+
+        .task-detail-tab{
+          span{
+            width: 120px;
+            height: 25px;
+            line-height: 25px;
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #263156;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            background: linear-gradient(180deg, rgba(253, 253, 253, 1) 0%, rgba(253, 253, 253, 1) 0%, rgba(221, 221, 222, 1) 100%, rgba(221, 221, 222, 1) 100%);
+            font-weight: bold;
+            margin-left: 7px;
+            cursor: pointer;
+
+            &.active{
+              color: #fff;
+              background: linear-gradient(180deg, rgba(70, 103, 184, 1) 0%, rgba(70, 103, 184, 1) 0%, rgba(41, 61, 109, 1) 100%, rgba(41, 61, 109, 1) 100%);
+            }
+          }
+        }
+
+        .task-detail-body{
+          border: 1px solid #999;
+          border-top: 5px solid #263156;
+          background: #fff;
+
+          p{
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+            margin: 0;
+          }
+
+          .task-detail-table{
+            >div{
+              width: 100%;
+              height: 240px;
+              overflow-y: auto;
+            }
+
+            table{
+              margin: 0;
+              table-layout: fixed;
+              tr{
+                &:nth-child(even){
+                  background: #EDF5FF;
+                }
+
+                th{
+                  background: linear-gradient(180deg, rgba(248, 248, 248, 1) 0%, rgba(248, 248, 248, 1) 0%, rgba(220, 220, 222, 1) 100%, rgba(220, 220, 222, 1) 100%);
+                  border: none;
+                }
+
+                td{
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .task-detail-info{
+        color: #666;
+        margin: 40px 0;
+
+        label{
+          font-weight: normal;
+          margin-right: 10px;
+        }
+      }
+
+      .task-detail-close{
+        background: rgb(0, 204, 255);
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        padding: 0;
+        .border-radius(15px);
+      }
+    }
+
+  }
+}

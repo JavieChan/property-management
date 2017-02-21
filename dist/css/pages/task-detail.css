@@ -1,0 +1,155 @@
+body {
+  min-width: 1500px;
+}
+body #container {
+  min-width: 1500px;
+}
+body #container #main {
+  background-color: #f2f2f2;
+  font-size: 0;
+  min-width: 1500px;
+}
+body #container #main .right-panel {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+}
+/* 常见CSS3属性混合*/
+#header {
+  height: 80px;
+  background-color: #363636;
+  line-height: 80px;
+  font-size: 0;
+}
+#header .title {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-left: 100px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 28px;
+  color: #00ccff;
+}
+#header .operations {
+  float: right;
+}
+#header .operations a {
+  color: #00ccff;
+  font-size: 15px;
+  margin-right: 40px;
+}
+#header .operations a.help-btn {
+  margin-right: 80px;
+}
+#header .operations a.logout-btn {
+  margin-right: 80px;
+}
+#left-nav-wrapper {
+  display: inline-block;
+  font-size: 14px;
+}
+#left-nav-wrapper #left-nav {
+  background-color: #999999;
+  padding-left: 0;
+  width: 200px;
+  height: 700px;
+}
+#left-nav-wrapper #left-nav .nav {
+  padding-left: 30px;
+  line-height: 56px;
+  height: 56px;
+  cursor: pointer;
+}
+#left-nav-wrapper #left-nav .nav:hover {
+  background-color: #00ccff;
+}
+#left-nav-wrapper #left-nav .nav:hover .nav-text {
+  color: #fff;
+}
+#left-nav-wrapper #left-nav .nav .nav-img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 18px;
+  vertical-align: top;
+  margin-right: 10px;
+}
+#left-nav-wrapper #left-nav .nav .nav-text {
+  color: #fff;
+}
+#left-nav-wrapper #left-nav .nav .nav-text:hover {
+  text-decoration: none;
+}
+#main .right-panel .task-detail-wrapper {
+  padding-top: 30px;
+  font-size: 14px;
+  width: 810px;
+}
+#main .right-panel .task-detail-wrapper .task-detail-panel .task-detail-tab span {
+  width: 120px;
+  height: 25px;
+  line-height: 25px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #263156;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background: linear-gradient(180deg, #fdfdfd 0%, #fdfdfd 0%, #ddddde 100%, #ddddde 100%);
+  font-weight: bold;
+  margin-left: 7px;
+  cursor: pointer;
+}
+#main .right-panel .task-detail-wrapper .task-detail-panel .task-detail-tab span.active {
+  color: #fff;
+  background: linear-gradient(180deg, #4667b8 0%, #4667b8 0%, #293d6d 100%, #293d6d 100%);
+}
+#main .right-panel .task-detail-wrapper .task-detail-panel .task-detail-body {
+  border: 1px solid #999;
+  border-top: 5px solid #263156;
+  background: #fff;
+}
+#main .right-panel .task-detail-wrapper .task-detail-panel .task-detail-body p {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  margin: 0;
+}
+#main .right-panel .task-detail-wrapper .task-detail-panel .task-detail-body .task-detail-table > div {
+  width: 100%;
+  height: 240px;
+  overflow-y: auto;
+}
+#main .right-panel .task-detail-wrapper .task-detail-panel .task-detail-body .task-detail-table table {
+  margin: 0;
+  table-layout: fixed;
+}
+#main .right-panel .task-detail-wrapper .task-detail-panel .task-detail-body .task-detail-table table tr:nth-child(even) {
+  background: #EDF5FF;
+}
+#main .right-panel .task-detail-wrapper .task-detail-panel .task-detail-body .task-detail-table table tr th {
+  background: linear-gradient(180deg, #f8f8f8 0%, #f8f8f8 0%, #dcdcde 100%, #dcdcde 100%);
+  border: none;
+}
+#main .right-panel .task-detail-wrapper .task-detail-panel .task-detail-body .task-detail-table table tr td {
+  border: none;
+}
+#main .right-panel .task-detail-wrapper .task-detail-info {
+  color: #666;
+  margin: 40px 0;
+}
+#main .right-panel .task-detail-wrapper .task-detail-info label {
+  font-weight: normal;
+  margin-right: 10px;
+}
+#main .right-panel .task-detail-wrapper .task-detail-close {
+  background: #00ccff;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  padding: 0;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
