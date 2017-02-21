@@ -84,39 +84,39 @@ body #container #main .right-panel {
 #main .right-panel .property-detail-wrapper {
   padding-top: 30px;
 }
-#main .right-panel .property-detail-wrapper .property-detail-panel {
+#main .right-panel .property-detail-wrapper .detail-panel {
   width: 810px;
   border: 1px solid #e4e4e4;
   background: #fff;
   font-size: 14px;
 }
-#main .right-panel .property-detail-wrapper .property-detail-panel .property-detail-panel-header {
+#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-header {
   background: #999;
   height: 30px;
   line-height: 30px;
   text-indent: 20px;
 }
-#main .right-panel .property-detail-wrapper .property-detail-panel .property-detail-panel-detail {
+#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body {
   padding: 30px 40px 30px 60px;
 }
-#main .right-panel .property-detail-wrapper .property-detail-panel .property-detail-panel-detail .porperty-label {
+#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label {
   margin-bottom: 10px;
 }
-#main .right-panel .property-detail-wrapper .property-detail-panel .property-detail-panel-detail .porperty-label label {
+#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label label {
   margin-right: 10px;
   width: 80px;
   display: inline-block;
   font-weight: normal;
 }
-#main .right-panel .property-detail-wrapper .property-detail-panel .property-detail-panel-detail .porperty-label span .property-img {
+#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span .property-img {
   height: 175px;
 }
-#main .right-panel .property-detail-wrapper .property-detail-panel .property-detail-panel-detail .porperty-label span .property-img img {
+#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span .property-img img {
   display: block;
   width: 180px;
   height: 115px;
 }
-#main .right-panel .property-detail-wrapper .property-detail-panel .property-detail-panel-detail .porperty-label span a {
+#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span a {
   color: #0cf;
   margin-left: 30px;
 }
