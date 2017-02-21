@@ -1,3 +1,4 @@
+/* 常见CSS3属性混合*/
 body {
   min-width: 1500px;
 }
@@ -13,4 +14,15 @@ body #container #main .right-panel {
   display: inline-block;
   vertical-align: top;
   margin-left: 100px;
+}
+body .btn {
+  background: #00ccff;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  padding: 0;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
 }

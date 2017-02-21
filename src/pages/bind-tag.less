@@ -1,0 +1,74 @@
+
+@import "../common/common.less";
+@import "../components/header/style.less";
+@import "../components/left-nav/style.less";
+
+#main {
+  .right-panel {
+
+    .bind-tag-wrapper{
+      padding-top: 30px;
+      font-size: 14px;
+      width: 810px;
+
+      .device-list-panel{
+        border: 1px solid #000;
+        background: #fff;
+
+        >p{
+          font-size: 16px;
+          padding: 10px;
+        }
+
+        .device-list{
+          position: relative;
+          overflow-x: auto;
+
+          >ul{
+            width: auto;
+            display: block;
+            padding: 0;
+
+            li{
+              list-style: none;
+              width: 105px;
+              float: left;
+              margin: 0 20px;
+
+              >img{
+                display: block;
+                width: 105px;
+                height: 80px;
+              }
+
+              >span{display: block;}
+
+              .device-name{
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+
+      .generate-tag{
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .btn-group-right{
+        button{
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+
+      .btn-group-bottom{
+        text-align: center;
+
+        button{margin: 0 20px;}
+      }
+    }
+
+  }
+}

@@ -92,57 +92,56 @@ body .btn {
 #left-nav-wrapper #left-nav .nav .nav-text:hover {
   text-decoration: none;
 }
-#main .right-panel .property-detail-wrapper {
+#main .right-panel .bind-tag-wrapper {
   padding-top: 30px;
   font-size: 14px;
   width: 810px;
 }
-#main .right-panel .property-detail-wrapper .detail-panel {
-  border: 1px solid #e4e4e4;
+#main .right-panel .bind-tag-wrapper .device-list-panel {
+  border: 1px solid #000;
   background: #fff;
 }
-#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-header {
-  background: #999;
-  height: 30px;
-  line-height: 30px;
-  text-indent: 20px;
+#main .right-panel .bind-tag-wrapper .device-list-panel > p {
+  font-size: 16px;
+  padding: 10px;
 }
-#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body {
-  padding: 30px 40px 30px 60px;
+#main .right-panel .bind-tag-wrapper .device-list-panel .device-list {
+  position: relative;
+  overflow-x: auto;
 }
-#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label {
-  margin-bottom: 10px;
-}
-#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label label {
-  margin-right: 10px;
-  width: 80px;
-  display: inline-block;
-  font-weight: normal;
-  vertical-align: top;
-}
-#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span {
-  display: inline-block;
-}
-#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span.w308 {
-  width: 308px;
-}
-#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span.w180 {
-  width: 180px;
-}
-#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span.w200 {
-  width: 200px;
-}
-#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span .property-img {
+#main .right-panel .bind-tag-wrapper .device-list-panel .device-list > ul {
+  width: auto;
   display: block;
-  width: 200px;
-  height: 175px;
+  padding: 0;
 }
-#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span .property-img img {
+#main .right-panel .bind-tag-wrapper .device-list-panel .device-list > ul li {
+  list-style: none;
+  width: 105px;
+  float: left;
+  margin: 0 20px;
+}
+#main .right-panel .bind-tag-wrapper .device-list-panel .device-list > ul li > img {
   display: block;
-  width: 180px;
-  height: 115px;
+  width: 105px;
+  height: 80px;
 }
-#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span a {
-  color: #0cf;
-  margin-left: 30px;
+#main .right-panel .bind-tag-wrapper .device-list-panel .device-list > ul li > span {
+  display: block;
+}
+#main .right-panel .bind-tag-wrapper .device-list-panel .device-list > ul li .device-name {
+  font-weight: bold;
+}
+#main .right-panel .bind-tag-wrapper .generate-tag {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#main .right-panel .bind-tag-wrapper .btn-group-right button {
+  display: block;
+  margin-bottom: 20px;
+}
+#main .right-panel .bind-tag-wrapper .btn-group-bottom {
+  text-align: center;
+}
+#main .right-panel .bind-tag-wrapper .btn-group-bottom button {
+  margin: 0 20px;
 }
