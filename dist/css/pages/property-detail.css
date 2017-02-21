@@ -107,8 +107,23 @@ body #container #main .right-panel {
   width: 80px;
   display: inline-block;
   font-weight: normal;
+  vertical-align: top;
+}
+#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span {
+  display: inline-block;
+}
+#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span.w308 {
+  width: 308px;
+}
+#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span.w180 {
+  width: 180px;
+}
+#main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span.w200 {
+  width: 200px;
 }
 #main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span .property-img {
+  display: block;
+  width: 200px;
   height: 175px;
 }
 #main .right-panel .property-detail-wrapper .detail-panel .detail-panel-body .detail-label span .property-img img {

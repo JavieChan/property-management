@@ -81,3 +81,63 @@ body #container #main .right-panel {
 #left-nav-wrapper #left-nav .nav .nav-text:hover {
   text-decoration: none;
 }
+#main .right-panel .position-change-record-wrapper {
+  padding-top: 30px;
+}
+#main .right-panel .position-change-record-wrapper .detail-panel {
+  width: 810px;
+  border: 1px solid #e4e4e4;
+  background: #fff;
+  font-size: 14px;
+}
+#main .right-panel .position-change-record-wrapper .detail-panel .detail-panel-header {
+  background: #999;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 20px;
+}
+#main .right-panel .position-change-record-wrapper .detail-panel .detail-panel-body {
+  padding: 30px 40px 30px 60px;
+}
+#main .right-panel .position-change-record-wrapper .detail-panel .detail-panel-body .detail-label {
+  margin-bottom: 10px;
+}
+#main .right-panel .position-change-record-wrapper .detail-panel .detail-panel-body .detail-label label {
+  margin-right: 10px;
+  width: 80px;
+  display: inline-block;
+  font-weight: normal;
+  vertical-align: top;
+}
+#main .right-panel .position-change-record-wrapper .detail-panel .detail-panel-body .detail-label span {
+  display: inline-block;
+}
+#main .right-panel .position-change-record-wrapper .detail-panel .detail-panel-body .detail-label span.w120 {
+  width: 120px;
+}
+#main .right-panel .position-change-record-wrapper .detail-panel .detail-panel-body .position-change-record-panel {
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(153, 153, 153, 0.35);
+  -moz-box-shadow: 0 2px 2px rgba(153, 153, 153, 0.35);
+  -webkit-box-shadow: 0 2px 2px rgba(153, 153, 153, 0.35);
+  padding: 10px;
+}
+#main .right-panel .position-change-record-wrapper .detail-panel .detail-panel-body .position-change-record-panel .position-change-record-header {
+  margin-bottom: 15px;
+}
+#main .right-panel .position-change-record-wrapper .detail-panel .detail-panel-body .position-change-record-panel .position-change-record-header img {
+  float: right;
+  width: 12px;
+  height: 12px;
+  margin-top: 4px;
+}
+#main .right-panel .position-change-record-wrapper .detail-panel .detail-panel-body .position-change-record-panel .position-change-record-body .table tr th {
+  border-top: none;
+  border-bottom: 1px solid #F2F2F2;
+}
+#main .right-panel .position-change-record-wrapper .detail-panel .detail-panel-body .position-change-record-panel .position-change-record-body .table tr td {
+  border-bottom: 1px solid #F2F2F2;
+}
