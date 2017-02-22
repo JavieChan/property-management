@@ -1,0 +1,162 @@
+/* 常见CSS3属性混合*/
+body {
+  min-width: 1500px;
+}
+body #container {
+  min-width: 1500px;
+}
+body #container #main {
+  background-color: #f2f2f2;
+  font-size: 0;
+  min-width: 1500px;
+}
+body #container #main .right-panel {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+}
+body .btn {
+  background: #00ccff;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  padding: 0;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+#header {
+  height: 80px;
+  background-color: #363636;
+  line-height: 80px;
+  font-size: 0;
+}
+#header .title {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-left: 100px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 28px;
+  color: #00ccff;
+}
+#header .operations {
+  float: right;
+}
+#header .operations a {
+  color: #00ccff;
+  font-size: 15px;
+  margin-right: 40px;
+}
+#header .operations a.help-btn {
+  margin-right: 80px;
+}
+#header .operations a.logout-btn {
+  margin-right: 80px;
+}
+#left-nav-wrapper {
+  display: inline-block;
+  font-size: 14px;
+}
+#left-nav-wrapper #left-nav {
+  background-color: #999999;
+  padding-left: 0;
+  width: 200px;
+  height: 700px;
+}
+#left-nav-wrapper #left-nav .nav {
+  padding-left: 30px;
+  line-height: 56px;
+  height: 56px;
+  cursor: pointer;
+}
+#left-nav-wrapper #left-nav .nav:hover {
+  background-color: #00ccff;
+}
+#left-nav-wrapper #left-nav .nav:hover .nav-text {
+  color: #fff;
+}
+#left-nav-wrapper #left-nav .nav .nav-img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 18px;
+  vertical-align: top;
+  margin-right: 10px;
+}
+#left-nav-wrapper #left-nav .nav .nav-text {
+  color: #fff;
+}
+#left-nav-wrapper #left-nav .nav .nav-text:hover {
+  text-decoration: none;
+}
+#main .right-panel .property-count-wrapper {
+  padding-top: 30px;
+  font-size: 14px;
+  width: 810px;
+}
+#main .right-panel .property-count-wrapper .property-count-title {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+}
+#main .right-panel .property-count-wrapper .property-count-filter > div {
+  display: inline-block;
+}
+#main .right-panel .property-count-wrapper .property-count-filter > div label {
+  font-weight: normal;
+}
+#main .right-panel .property-count-wrapper .property-count-filter > div label input {
+  margin-right: 5px;
+}
+#main .right-panel .property-count-wrapper .property-count-filter > a {
+  float: right;
+  color: #0cf;
+  font-weight: bold;
+}
+#main .right-panel .property-count-wrapper .property-count-filter > a img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 29px;
+  height: 25px;
+}
+#main .right-panel .property-count-wrapper .property-count-table {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  margin-top: 5px;
+}
+#main .right-panel .property-count-wrapper .property-count-table .table {
+  margin: 0;
+}
+#main .right-panel .property-count-wrapper .property-count-table .table tr th {
+  background: #999;
+  border: none;
+}
+#main .right-panel .property-count-wrapper .property-count-table .table tr td {
+  border-bottom: 1px solid #F2F2F2;
+  vertical-align: middle;
+  height: 60px;
+}
+#main .right-panel .property-count-wrapper .property-count-table .table tr td a {
+  color: #0cf;
+}
+#main .right-panel .property-count-wrapper .page-panel > div {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 50%;
+}
+#main .right-panel .property-count-wrapper .page-panel .page-panel-left {
+  text-align: right;
+  width: 49%;
+  padding-right: 30px;
+}
+#main .right-panel .property-count-wrapper .page-panel .page-panel-right {
+  padding-left: 30px;
+}
+#main .right-panel .property-count-wrapper .page-panel .page-panel-right span {
+  padding: 8px 2px;
+  display: inline-block;
+}
