@@ -92,56 +92,56 @@ body .btn {
 #left-nav-wrapper #left-nav .nav .nav-text:hover {
   text-decoration: none;
 }
-#main .right-panel .bind-tag-wrapper {
+#main .right-panel .print-tag-wrapper {
   padding-top: 30px;
   font-size: 14px;
   width: 810px;
 }
-#main .right-panel .bind-tag-wrapper .device-list-panel {
+#main .right-panel .print-tag-wrapper .device-list-panel {
   border: 1px solid #000;
   background: #fff;
 }
-#main .right-panel .bind-tag-wrapper .device-list-panel > p {
+#main .right-panel .print-tag-wrapper .device-list-panel > p {
   font-size: 16px;
   padding: 10px;
 }
-#main .right-panel .bind-tag-wrapper .device-list-panel .device-list {
+#main .right-panel .print-tag-wrapper .device-list-panel .device-list {
   position: relative;
   overflow-x: auto;
 }
-#main .right-panel .bind-tag-wrapper .device-list-panel .device-list > ul {
+#main .right-panel .print-tag-wrapper .device-list-panel .device-list > ul {
   width: auto;
   display: block;
   padding: 0;
 }
-#main .right-panel .bind-tag-wrapper .device-list-panel .device-list > ul li {
+#main .right-panel .print-tag-wrapper .device-list-panel .device-list > ul li {
   list-style: none;
   width: 105px;
   float: left;
   margin: 0 20px;
 }
-#main .right-panel .bind-tag-wrapper .device-list-panel .device-list > ul li > img {
+#main .right-panel .print-tag-wrapper .device-list-panel .device-list > ul li > img {
   display: block;
   width: 105px;
   height: 80px;
 }
-#main .right-panel .bind-tag-wrapper .device-list-panel .device-list > ul li > span {
+#main .right-panel .print-tag-wrapper .device-list-panel .device-list > ul li > span {
   display: block;
 }
-#main .right-panel .bind-tag-wrapper .device-list-panel .device-list > ul li .device-name {
+#main .right-panel .print-tag-wrapper .device-list-panel .device-list > ul li .device-name {
   font-weight: bold;
 }
-#main .right-panel .bind-tag-wrapper .generate-tag {
+#main .right-panel .print-tag-wrapper .generate-tag {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-#main .right-panel .bind-tag-wrapper .btn-group-right button {
+#main .right-panel .print-tag-wrapper .btn-group-right button {
   display: block;
   margin-bottom: 20px;
 }
-#main .right-panel .bind-tag-wrapper .btn-group-bottom {
+#main .right-panel .print-tag-wrapper .btn-group-bottom {
   text-align: center;
 }
-#main .right-panel .bind-tag-wrapper .btn-group-bottom button {
+#main .right-panel .print-tag-wrapper .btn-group-bottom button {
   margin: 0 20px;
 }
