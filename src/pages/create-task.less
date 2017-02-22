@@ -1,0 +1,250 @@
+@import "../common/common.less";
+@import "../components/header/style.less";
+@import "../components/left-nav/style.less";
+
+#main {
+    .right-panel {
+        font-size: 13px;
+
+        hr {
+            border-color: #ABABAB;
+        }
+
+        .datetimepicker-inline {
+            display: none !important;
+        }
+
+        .search-panel, .param-panel {
+            width: 700px;
+            margin-top: 20px;
+            display: inline-block;
+
+            .search-input-wrapper {
+                @search-input-height: 35px;
+
+                font-size: 0;
+                margin-bottom: 10px;
+
+                .search-input {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    height: @search-input-height;
+                    line-height: @search-input-height;
+                    font-size: 13px;
+                    display: inline-block;
+                    width: 600px;
+                }
+
+                .search-btn {
+                    .btn(@btn-width: 100px, @btn-height: 35px, @btn-font-size: 13px, @btn-border-radius: 5px, @btn-font-color: #fff, @btn-bg-color: rgb(134, 134, 134));
+
+                    &:active {
+                        background-color: @deep-gray;
+                    }
+
+                    display: inline-block;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    vertical-align: top;
+                }
+            }
+
+            .search-item {
+                @row-height: 40px;
+
+                display: inline-block;
+                line-height: @row-height;
+                height: @row-height;
+
+                &:nth-child(even) {
+                    margin-right: 20px;
+                }
+
+                &:nth-child(odd) {
+
+                }
+
+                &.value-item, &.date-item {
+                    display: block;
+                    margin-right: 0px;
+
+                    .search-content {
+                        width: 634px;
+
+                        .value-input {
+                            width: 272px;
+                            display: inline-block;
+                        }
+
+                        span {
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+
+                        .form-date {
+                            display: inline-block;
+                            width: 272px;
+                        }
+                    }
+                }
+
+                .search-label {
+                    display: inline-block;
+                    width: 60px;
+                    vertical-align: top;
+                }
+
+                .search-content {
+                    display: inline-block;
+                    width: 274px;
+
+                    .format-input {
+                        @format-input-height: 30px;
+
+                        height: @format-input-height;
+                        line-height: @format-input-height;
+                        margin-top: (@row-height - @format-input-height) / 2;
+                        vertical-align: top;
+                    }
+
+                    .selector {
+                        @selector-width: 274px;
+                        @selector-height: @row-height - 10px;
+
+                        vertical-align: top;
+                        height: @row-height;
+                        line-height: @row-height;
+
+                        .btn {
+                            .border-radius(5px);
+
+                            color: #000;
+                            height: @selector-height;
+                            line-height: @selector-height;
+                            background-color: #fff;
+                            width: @selector-width;
+                            margin-top: (@row-height - @selector-height) / 2;
+                        }
+
+                        ul {
+                            width: @selector-width;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .data-panel {
+            .summary-panel {
+                overflow: hidden;
+                padding-bottom: 20px;
+
+                .bind-all-btn {
+                    .btn (@btn-width: 100px, @btn-height: 30px, @btn-font-size: @btn-font-size, @btn-border-radius: 15px, @btn-font-color: #fff, @btn-bg-color: rgba(0, 204, 255, 1));
+                    display: inline-block;
+                    float: right;
+                }
+            }
+
+            .data-list {
+                width: 700px;
+                background-color: #fff;
+
+                th {
+                    text-align: center;
+                }
+
+                .select {
+                    width: 60px;
+                    text-align: center;
+
+                    .all-equipment-checkbox-wrapper {
+                        .equipment-checkbox {
+                            display: inline-block;
+
+                            .checkbox-img {
+                                vertical-align: top;
+                                margin-top: 2px;
+                            }
+                        }
+                    }
+                }
+
+                .picture {
+                    width: 70px;
+                    text-align: center;
+
+                    .equipment-img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                .info {
+                    .equipment-name {
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+
+                    .equipment-info-item {
+                        label {
+                            color: #ABABAB;
+                        }
+                    }
+                }
+
+                .version {
+                    text-align: center;
+                }
+
+                .tag {
+                    text-align: center;
+                }
+
+                .position {
+                    text-align: center;
+                }
+
+                .operations {
+                    text-align: center;
+
+                    a {
+                        color: rgb(0, 204, 255);
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                // .operation-row {
+                //     background-color: #fff;
+
+                //     .page-info {
+                //         display: inline-block;
+                //         font-weight: bold;
+                //         color: #000;
+                //         width: 150px;
+                //         text-align: center;
+                //         letter-spacing: 1px
+                //     }
+
+                //     .operations {
+                //         display: inline-block;
+                //         margin-left: 20px;
+
+                //         .prev-btn, .next-btn {
+                //             display: inline-block;
+                //             cursor: pointer;
+                //         }
+
+                //         .next-btn {
+                //             margin-left: 10px;
+                //         }
+                //     }
+                // }
+            }
+        }
+    }
+}

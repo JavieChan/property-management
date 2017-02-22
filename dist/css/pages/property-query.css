@@ -1,0 +1,290 @@
+/* 常见CSS3属性混合*/
+body {
+  min-width: 1500px;
+}
+body #container {
+  min-width: 1500px;
+}
+body #container #main {
+  background-color: #f2f2f2;
+  font-size: 0;
+  min-width: 1500px;
+}
+body #container #main .right-panel {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+}
+body .btn {
+  background: #00ccff;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  padding: 0;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+#header {
+  height: 80px;
+  background-color: #363636;
+  line-height: 80px;
+  font-size: 0;
+}
+#header .title {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-left: 100px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 28px;
+  color: #00ccff;
+}
+#header .operations {
+  float: right;
+}
+#header .operations a {
+  color: #00ccff;
+  font-size: 15px;
+  margin-right: 40px;
+}
+#header .operations a.help-btn {
+  margin-right: 80px;
+}
+#header .operations a.logout-btn {
+  margin-right: 80px;
+}
+#left-nav-wrapper {
+  display: inline-block;
+  font-size: 14px;
+}
+#left-nav-wrapper #left-nav {
+  background-color: #999999;
+  padding-left: 0;
+  width: 200px;
+  height: 700px;
+}
+#left-nav-wrapper #left-nav .nav {
+  padding-left: 30px;
+  line-height: 56px;
+  height: 56px;
+  cursor: pointer;
+}
+#left-nav-wrapper #left-nav .nav:hover {
+  background-color: #00ccff;
+}
+#left-nav-wrapper #left-nav .nav:hover .nav-text {
+  color: #fff;
+}
+#left-nav-wrapper #left-nav .nav .nav-img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 18px;
+  vertical-align: top;
+  margin-right: 10px;
+}
+#left-nav-wrapper #left-nav .nav .nav-text {
+  color: #fff;
+}
+#left-nav-wrapper #left-nav .nav .nav-text:hover {
+  text-decoration: none;
+}
+#main .right-panel {
+  font-size: 13px;
+}
+#main .right-panel hr {
+  border-color: #ABABAB;
+}
+#main .right-panel .datetimepicker-inline {
+  display: none !important;
+}
+#main .right-panel .search-panel {
+  width: 700px;
+  margin-top: 20px;
+  display: inline-block;
+}
+#main .right-panel .search-panel .search-input-wrapper {
+  font-size: 0;
+  margin-bottom: 10px;
+}
+#main .right-panel .search-panel .search-input-wrapper .search-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 35px;
+  line-height: 35px;
+  font-size: 13px;
+  display: inline-block;
+  width: 600px;
+}
+#main .right-panel .search-panel .search-input-wrapper .search-btn {
+  display: block;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #868686;
+  font-weight: normal;
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-align: center;
+  border: 0px;
+  padding: 0px;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  display: inline-block;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  vertical-align: top;
+}
+#main .right-panel .search-panel .search-input-wrapper .search-btn:active {
+  background-color: #CFCFCF;
+}
+#main .right-panel .search-panel .search-input-wrapper .search-btn:active {
+  background-color: #7f7f7f;
+}
+#main .right-panel .search-panel .search-item {
+  display: inline-block;
+  line-height: 40px;
+  height: 40px;
+}
+#main .right-panel .search-panel .search-item:nth-child(even) {
+  margin-right: 20px;
+}
+#main .right-panel .search-panel .search-item.value-item,
+#main .right-panel .search-panel .search-item.date-item {
+  display: block;
+  margin-right: 0px;
+}
+#main .right-panel .search-panel .search-item.value-item .search-content,
+#main .right-panel .search-panel .search-item.date-item .search-content {
+  width: 634px;
+}
+#main .right-panel .search-panel .search-item.value-item .search-content .value-input,
+#main .right-panel .search-panel .search-item.date-item .search-content .value-input {
+  width: 272px;
+  display: inline-block;
+}
+#main .right-panel .search-panel .search-item.value-item .search-content span,
+#main .right-panel .search-panel .search-item.date-item .search-content span {
+  display: inline-block;
+  vertical-align: top;
+}
+#main .right-panel .search-panel .search-item.value-item .search-content .form-date,
+#main .right-panel .search-panel .search-item.date-item .search-content .form-date {
+  display: inline-block;
+  width: 272px;
+}
+#main .right-panel .search-panel .search-item .search-label {
+  display: inline-block;
+  width: 60px;
+  vertical-align: top;
+}
+#main .right-panel .search-panel .search-item .search-content {
+  display: inline-block;
+  width: 274px;
+}
+#main .right-panel .search-panel .search-item .search-content .format-input {
+  height: 30px;
+  line-height: 30px;
+  margin-top: 5px;
+  vertical-align: top;
+}
+#main .right-panel .search-panel .search-item .search-content .selector {
+  vertical-align: top;
+  height: 40px;
+  line-height: 40px;
+}
+#main .right-panel .search-panel .search-item .search-content .selector .btn {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: #000;
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+  width: 274px;
+  margin-top: 5px;
+}
+#main .right-panel .search-panel .search-item .search-content .selector ul {
+  width: 274px;
+  text-align: center;
+}
+#main .right-panel .data-panel .summary {
+  margin-bottom: 20px;
+}
+#main .right-panel .data-panel .summary .value {
+  color: red;
+}
+#main .right-panel .data-panel .data-list {
+  width: 700px;
+  background-color: #fff;
+}
+#main .right-panel .data-panel .data-list th {
+  text-align: center;
+}
+#main .right-panel .data-panel .data-list .picture {
+  width: 70px;
+  text-align: center;
+}
+#main .right-panel .data-panel .data-list .picture .equipment-img {
+  width: 60px;
+  height: 60px;
+}
+#main .right-panel .data-panel .data-list .info {
+  width: 170px;
+}
+#main .right-panel .data-panel .data-list .info .equipment-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#main .right-panel .data-panel .data-list .info .equipment-info-item label {
+  color: #ABABAB;
+}
+#main .right-panel .data-panel .data-list .version {
+  text-align: center;
+}
+#main .right-panel .data-panel .data-list .tag {
+  text-align: center;
+}
+#main .right-panel .data-panel .data-list .position {
+  text-align: center;
+}
+#main .right-panel .data-panel .data-list .operations {
+  text-align: center;
+}
+#main .right-panel .data-panel .data-list .operations a {
+  color: #00ccff;
+}
+#main .right-panel .data-panel .data-list .operations a:hover {
+  text-decoration: none;
+}
+#main .right-panel .data-panel .data-list .operation-row {
+  background-color: #fff;
+}
+#main .right-panel .data-panel .data-list .operation-row .page-info {
+  display: inline-block;
+  font-weight: bold;
+  color: #000;
+  width: 150px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+#main .right-panel .data-panel .data-list .operation-row .operations {
+  display: inline-block;
+  margin-left: 20px;
+}
+#main .right-panel .data-panel .data-list .operation-row .operations .prev-btn,
+#main .right-panel .data-panel .data-list .operation-row .operations .next-btn {
+  display: inline-block;
+  cursor: pointer;
+}
+#main .right-panel .data-panel .data-list .operation-row .operations .next-btn {
+  margin-left: 10px;
+}

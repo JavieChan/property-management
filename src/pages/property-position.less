@@ -1,0 +1,231 @@
+@import "../common/common.less";
+@import "../components/header/style.less";
+@import "../components/left-nav/style.less";
+
+#main {
+    .right-panel {
+        @item-border-color: rgba(228, 228, 228, 1);
+
+        .notice-panel-wrapper {
+            width: 450px;
+            display: inline-block;
+            padding-top: 30px;
+            font-size: 14px;
+
+            .notice-panel-title {
+                text-align: center;
+            }
+
+            .notice-panel {
+                @item-padding-left: 20px;
+
+                margin-top: 20px;
+                border: 1px solid @item-border-color;
+
+                .notice-panel-header {
+                    @notice-panel-header-height: 50px;
+
+                    border-bottom: 1px solid @item-border-color;
+                    height: @notice-panel-header-height;
+                    background-color: rgba(242, 242, 242, 1);
+                    line-height: @notice-panel-header-height;
+                    padding-left: @item-padding-left;
+
+                    .all-notice-checkbox-wrapper {
+                        display: inline-block;
+                        cursor: pointer;
+
+                        .notice-checkbox {
+                            display: inline-block;
+                            margin-right: 20px;
+
+                            img {
+                                vertical-align: top;
+                                margin-top: (@notice-panel-header-height - 15px) / 2;
+                            }
+                        }
+
+                        .notice-checkbox-label {
+                            display: inline-block;
+                            height: @notice-panel-header-height;
+                            line-height: @notice-panel-header-height;
+                        }
+                    }
+
+                    .notice-clear-btn {
+                        .border-radius(15px);
+                        .btn(@btn-width: 80px, @btn-height: 30px, @btn-font-size: 14px, @btn-border-radius: 15px, @btn-font-color: #000, @btn-bg-color: #fff);
+
+                        text-align: center;
+                        display: inline-block;
+                        float: right;
+                        margin-right: 15px;
+                        margin-top: (@notice-panel-header-height - 30px) / 2;
+                    }
+                }
+
+                .notice-panel-content {
+                    background-color: #fff;
+
+                    .notice-item {
+                        @notice-item-height: 80px;
+
+                        padding-left: @item-padding-left;
+                        height: @notice-item-height;
+                        line-height: @notice-item-height;
+                        border-bottom: 1px solid @item-border-color;
+
+                        .notice-check-box-wrapper {
+                            display: inline-block;
+
+                            .notice-checkbox {
+                                display: inline-block;
+                                margin-right: 20px;
+
+                                img {
+                                    vertical-align: top;
+                                    margin-top: (@notice-item-height - 15px) / 2;
+                                }
+                            }
+
+                            .notice-checkbox-label {
+                                display: inline-block;
+                                height: @notice-item-height;
+                                line-height: @notice-item-height;
+                                width: 250px;
+                            }
+                        }
+
+                        .notice-operations {
+                            display: inline-block;
+                            float: right;
+                            margin-right: 20px;
+
+                            a {
+                                color: rgb(0, 204, 255);
+                            }
+
+                            .notice-detail-btn {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .notice-panel-footer {
+                    @notice-panel-footer-height: 40px;
+
+                    background-color: #fff;
+                    height: @notice-panel-footer-height;
+                    line-height: @notice-panel-footer-height;
+
+                    .page-info {
+                        display: inline-block;
+                        font-weight: bold;
+                        color: #000;
+                        width: 150px;
+                        text-align: center;
+                        margin-left: 40px;
+                        letter-spacing: 1px
+                    }
+
+                    .operations {
+                        display: inline-block;
+                        margin-left: 20px;
+
+                        .prev-btn, .next-btn {
+                            display: inline-block;
+                            cursor: pointer;
+                        }
+
+                        .next-btn {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .position-info-panel-wrapper {
+            width: 284px;
+            display: inline-block;
+            padding-top: 30px;
+            font-size: 14px;
+            margin-left: 90px;
+            vertical-align: top;
+            color: rgb(102, 102, 102);
+
+            .position-info-panel-title {
+                text-align: center;
+            }
+
+            .position-info-panel {
+                @item-padding-left: 10px;
+
+                margin-top: 20px;
+                background-color: #fff;
+                font-size: 12px;
+                padding-bottom: 20px;
+                border: 1px solid @item-border-color;
+
+                .box-shadow (@x: 0, @y: 2px, @blur: 1px, @color: rgba(153, 153, 153, 0.349019607843137));
+                .border-radius(5px);
+
+                .position-info-panel-header {
+                    @position-info-panel-header-height: 30px;
+
+                    height: @position-info-panel-header-height;
+                    line-height: @position-info-panel-header-height;
+
+                    .position-info-panel-title {
+                        display: inline-block;
+                        margin-left: 10px;
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+                }
+
+                .position-info-list {
+                    padding: 10px 12px 0 12px;
+
+                    .position-info-header {
+                        font-weight: bold;
+                    }
+
+                    .position-info-item, .position-info-header {
+                        @position-info-item-height: 30px;
+
+                        height: @position-info-item-height;
+                        line-height: @position-info-item-height;
+                        border-bottom: 1px solid #DEDEDE;
+
+                        .position {
+                            display: inline-block;
+                            width: 150px;
+
+                            .item-sub-title {
+                                text-indent: 1em;
+                                display: inline-block;
+                            }
+                        }
+
+                        .count {
+                            display: inline-block;
+                            margin-right: 70px;
+                            text-align: right;
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

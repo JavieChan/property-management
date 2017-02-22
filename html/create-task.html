@@ -6,10 +6,10 @@
         <meta name="renderer" content="webkit">
         <!-- 告诉IE使用目前最新的布局引擎 -->
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <title>资产查询</title>
+        <title>新建任务</title>
         <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap/datetimepicker.css">
-        <link rel="stylesheet" type="text/css" href="../dist/css/pages/property-query.css">
+        <link rel="stylesheet" type="text/css" href="../dist/css/pages/create-task.css">
     </head>
     <body>
         <div id="container">
@@ -72,18 +72,18 @@
                             </div>
                         </div>
                         <div class="search-item">
-                            <label class="search-label">责任人</label>
+                            <label class="search-label">课题号</label>
                             <div class="search-content">
-                                <div class="btn-group selector" id="person-selector">
+                                <div class="btn-group selector" id="course-selector">
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span id="person-show">请选择</span>
-                                        <input type="hidden" id="person-id" value="" />
+                                        <span id="course-show">请选择</span>
+                                        <input type="hidden" id="course-id" value="" />
                                         <span class="caret"></span>
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a href="javascript:void(0)" class="person-option" data-value="1">张三</a></li>
-                                        <li><a href="javascript:void(0)" class="person-option" data-value="2">李四</a></li>
-                                        <li><a href="javascript:void(0)" class="person-option" data-value="3">王五</a></li>
+                                        <li><a href="javascript:void(0)" class="course-option" data-value="1">张三</a></li>
+                                        <li><a href="javascript:void(0)" class="course-option" data-value="2">李四</a></li>
+                                        <li><a href="javascript:void(0)" class="course-option" data-value="3">王五</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -113,17 +113,31 @@
                     <hr>
 
                     <div class="data-panel">
-                        <div class="summary">共 <span class="value">50</span> 条查询结果</div>
+                        <div class="summary-panel">
+                            <input type="button" class="bind-all-btn" id="multi-delete-btn" value="删除" />
+                        </div>
+
                         <table class="data-list table-bordered table-condensed table-striped">
                             <tr>
+                                <th class="select">
+                                    <div id="all-equipment-checkbox-wrapper" class="all-equipment-checkbox-wrapper">
+                                        <div class="equipment-checkbox" id="all-equipment-checkbox"></div>
+                                        <span class="equipment-checkbox-label" id="all-equipment-checkbox-label">全选</span>
+                                    </div>
+                                </th>
                                 <th class="picture">设备图片</th>
                                 <th class="info">设备信息</th>
                                 <th class="version">设备型号</th>
                                 <th class="tag">设备标签码</th>
-                                <th class="position">设备位置</th>
                                 <th class="operations">操作</th>
                             </tr>
                             <tr>
+                                <td class="select">
+                                    <div class="equipment-check-box-wrapper" id="equipment-checkbox-wrapper-1">   <!-- 这里记得填数据，equipment-checkbox-后的数字为当前equipment的id -->
+                                        <input type="hidden" class="equipment-id" value="1" /> <!-- 这里记得填数据，要能唯一标识某条通知 -->
+                                        <div class="equipment-checkbox" id="equipment-checkbox-1"></div>
+                                    </div>
+                                </td>
                                 <td class="picture">
                                     <img src="" class="equipment-img" />
                                 </td>
@@ -140,13 +154,18 @@
                                 </td>
                                 <td class="version">X450J</td>
                                 <td class="tag">726100112</td>
-                                <td class="position">微生物所1号楼507</td>
                                 <td class="operations">
                                     <a href="javascript:void(0);" class="operation-btn detail-btn">查看</a>
                                     <a href="javascript:void(0);" class="operation-btn delete-btn">删除</a>
                                 </td>
                             </tr>
                             <tr>
+                                <td class="select">
+                                    <div class="equipment-check-box-wrapper" id="equipment-checkbox-wrapper-2">   <!-- 这里记得填数据，equipment-checkbox-后的数字为当前equipment的id -->
+                                        <input type="hidden" class="equipment-id" value="2" /> <!-- 这里记得填数据，要能唯一标识某条通知 -->
+                                        <div class="equipment-checkbox" id="equipment-checkbox-2"></div>
+                                    </div>
+                                </td>
                                 <td class="picture">
                                     <img src="" class="equipment-img" />
                                 </td>
@@ -163,13 +182,18 @@
                                 </td>
                                 <td class="version">X450J</td>
                                 <td class="tag">726100112</td>
-                                <td class="position">微生物所1号楼507</td>
                                 <td class="operations">
                                     <a href="javascript:void(0);" class="operation-btn detail-btn">查看</a>
                                     <a href="javascript:void(0);" class="operation-btn delete-btn">删除</a>
                                 </td>
                             </tr>
                             <tr>
+                                <td class="select">
+                                    <div class="equipment-check-box-wrapper" id="equipment-checkbox-wrapper-3">   <!-- 这里记得填数据，equipment-checkbox-后的数字为当前equipment的id -->
+                                        <input type="hidden" class="equipment-id" value="3" /> <!-- 这里记得填数据，要能唯一标识某条通知 -->
+                                        <div class="equipment-checkbox" id="equipment-checkbox-3"></div>
+                                    </div>
+                                </td>
                                 <td class="picture">
                                     <img src="" class="equipment-img" />
                                 </td>
@@ -186,36 +210,12 @@
                                 </td>
                                 <td class="version">X450J</td>
                                 <td class="tag">726100112</td>
-                                <td class="position">微生物所1号楼507</td>
                                 <td class="operations">
                                     <a href="javascript:void(0);" class="operation-btn detail-btn">查看</a>
                                     <a href="javascript:void(0);" class="operation-btn delete-btn">删除</a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="picture">
-                                    <img src="" class="equipment-img" />
-                                </td>
-                                <td class="info">
-                                    <div class="equipment-name">华硕笔记本电脑<span class="equipment-status">(完好)</span></div>
-                                    <div class="equipment-info-item">
-                                        <label>品牌</label>
-                                        <span class="content">华硕</span>
-                                    </div>
-                                    <div class="equipment-info-item">
-                                        <label>编码</label>
-                                        <span class="content">20161022</span>
-                                    </div>
-                                </td>
-                                <td class="version">X450J</td>
-                                <td class="tag">726100112</td>
-                                <td class="position">微生物所1号楼507</td>
-                                <td class="operations">
-                                    <a href="javascript:void(0);" class="operation-btn detail-btn">查看</a>
-                                    <a href="javascript:void(0);" class="operation-btn delete-btn">删除</a>
-                                </td>
-                            </tr>
-                            <tr class="operation-row">
+                          <!--   <tr class="operation-row">
                                 <td colspan="6">
                                     <div class="page-info">1-15 of 33</div>
                                     <div class="operations">
@@ -227,8 +227,36 @@
                                         </div>
                                     </div>
                                 </td>
-                            </tr>
+                            </tr> -->
                         </table>
+                    </div>
+
+                    <div class="param-panel">
+                        <div class="search-item">
+                            <label class="search-label">任务执行人</label>
+                            <div class="search-content">
+                                <div class="btn-group selector" id="person-selector">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span id="person-show">请选择</span>
+                                        <input type="hidden" id="person-id" value="" />
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0)" class="person-option" data-value="1">张三</a></li>
+                                        <li><a href="javascript:void(0)" class="person-option" data-value="2">李四</a></li>
+                                        <li><a href="javascript:void(0)" class="person-option" data-value="3">王五</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-item date-item">
+                            <label class="search-label">截止时间</label>
+                            <div class="search-content">
+                                <div class="input-group date form-date col-md-5" data-date="" data-date-format="yyyy-mm-dd" data-link-field="start-date" data-link-format="yyyy-mm-dd">
+                                    <input class="form-control format-input form-date" size="16" type="text" value="" readonly id="start-date">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,8 +267,9 @@
     <script type="text/javascript" src="../lib/js/bootstrap/bootstrap.min.js"></script>
     <script type="text/javascript" src="../lib/js/bootstrap/bootstrap-datetimepicker.js" charset="UTF-8"></script>
     <script type="text/javascript" src="../lib/js/bootstrap/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../src/plugins/checkbox/index.js"></script>
     <script type="text/javascript" src="../src/plugins/dropdown/index.js"></script>
-    <script type="text/javascript" src="../src/pages/property-query.js"></script>
+    <script type="text/javascript" src="../src/pages/create-task.js"></script>
 </html>
 
 

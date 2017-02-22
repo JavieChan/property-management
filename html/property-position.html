@@ -45,13 +45,108 @@
                         </li>
                     </ul>
                 </div>
-                <div class="right-panel"></div>
+                <div class="right-panel">
+                    <div class="notice-panel-wrapper">
+                        <div class="notice-panel-title">位置变动提醒</div>
+                        <div class="notice-panel">
+                            <div class="notice-panel-header">
+                                <div id="all-notice-checkbox-wrapper" class="all-notice-checkbox-wrapper">
+                                    <div class="notice-checkbox" id="all-notice-checkbox"></div>
+                                    <span class="notice-checkbox-label" id="all-notice-checkbox-label">选中所有记录</span>
+                                </div>
+                                <input type="button" class="notice-clear-btn" id="notice-clear-btn" value="清除" />
+                            </div>
+                            <div class="notice-panel-content">
+                                <div class="notice-item">
+                                    <div class="notice-check-box-wrapper" id="notice-checkbox-wrapper-1">   <!-- 这里记得填数据，notice-checkbox-后的数字为当前notice的id -->
+                                        <input type="hidden" class="notice-id" value="1" /> <!-- 这里记得填数据，要能唯一标识某条通知 -->
+                                        <div class="notice-checkbox" id="notice-checkbox-1"></div>
+                                        <span class="notice-checkbox-label" id="notice-checkbox-label-1">位置变更通知－－－质量测试仪</span>
+                                    </div>
+                                    <div class="notice-operations">
+                                        <a href="javascript:void(0);" class="notice-operation-btn notice-detail-btn">查看</a>
+                                        <a href="javascript:void(0);" class="notice-operation-btn notice-delete-btn">删除</a>
+                                    </div>
+                                </div>
+                                <div class="notice-item">
+                                    <div class="notice-check-box-wrapper" id="notice-checkbox-wrapper-2">   <!-- 这里记得填数据，notice-checkbox-后的数字为当前notice的id -->
+                                        <input type="hidden" class="notice-id" value="2" /> <!-- 这里记得填数据，要能唯一标识某条通知 -->
+                                        <div class="notice-checkbox" id="notice-checkbox-2"></div>
+                                        <span class="notice-checkbox-label" id="notice-checkbox-label-2">位置变更通知－－－计算机</span>
+                                    </div>
+                                    <div class="notice-operations">
+                                        <a href="javascript:void(0);" class="notice-operation-btn notice-detail-btn">查看</a>
+                                        <a href="javascript:void(0);" class="notice-operation-btn notice-delete-btn">删除</a>
+                                    </div>
+                                </div>
+                                <div class="notice-item">
+                                    <div class="notice-check-box-wrapper" id="notice-checkbox-wrapper-3">   <!-- 这里记得填数据，notice-checkbox-后的数字为当前notice的id -->
+                                        <input type="hidden" class="notice-id" value="3" /> <!-- 这里记得填数据，要能唯一标识某条通知 -->
+                                        <div class="notice-checkbox" id="notice-checkbox-3"></div>
+                                        <span class="notice-checkbox-label" id="notice-checkbox-label-3">维修进度更新－－－分析仪</span>
+                                    </div>
+                                    <div class="notice-operations">
+                                        <a href="javascript:void(0);" class="notice-operation-btn notice-detail-btn">查看</a>
+                                        <a href="javascript:void(0);" class="notice-operation-btn notice-delete-btn">删除</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notice-panel-footer">
+                                <div class="page-info">1-15 of 33</div>
+                                <div class="operations">
+                                    <div class="prev-btn">
+                                        <img src="../images/prev-page.png" class="prev-btn-img" />
+                                    </div>
+                                    <div class="next-btn">
+                                        <img src="../images/next-page.png" class="next-btn-img" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="position-info-panel-wrapper">
+                        <div class="position-info-panel-title">资产位置概览</div>
+                        <div class="position-info-panel">
+                            <div class="position-info-panel-header">
+                                <div class="position-info-panel-title">位置统计</div>
+                            </div>
+                            <div class="position-info-list">
+                                <div class="position-info-header">
+                                    <div class="position">位置</div>
+                                    <div class="count">台数</div>
+                                </div>
+                                <div class="position-info-item">
+                                    <div class="position"><span class="item-sub-title">在所</span></div>
+                                    <div class="count">304</div>
+                                </div>
+                                <div class="position-info-item">
+                                    <div class="position">微生物所1号楼</div>
+                                    <div class="count">157</div>
+                                </div>
+                                <div class="position-info-item">
+                                    <div class="position">微生物所1号楼</div>
+                                    <div class="count">147</div>
+                                </div>
+                                <div class="position-info-item">
+                                    <div class="position"><span class="item-sub-title">离所</span></div>
+                                    <div class="count">210</div>
+                                </div>
+                                <div class="position-info-item">
+                                    <div class="position">维修</div>
+                                    <div class="count">25</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
 
     <script type="text/javascript" src="../lib/js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="../lib/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../src/plugins/checkbox/index.js"></script>
     <script type="text/javascript" src="../src/pages/property-position.js"></script>
 </html>
 
