@@ -94,6 +94,7 @@ body .btn {
 }
 #main .right-panel {
   font-size: 13px;
+  padding-bottom: 100px;
 }
 #main .right-panel hr {
   border-color: #ABABAB;
@@ -172,12 +173,6 @@ body .btn {
   display: block;
   margin-right: 0px;
 }
-#main .right-panel .search-panel .search-item.value-item .search-content,
-#main .right-panel .param-panel .search-item.value-item .search-content,
-#main .right-panel .search-panel .search-item.date-item .search-content,
-#main .right-panel .param-panel .search-item.date-item .search-content {
-  width: 634px;
-}
 #main .right-panel .search-panel .search-item.value-item .search-content .value-input,
 #main .right-panel .param-panel .search-item.value-item .search-content .value-input,
 #main .right-panel .search-panel .search-item.date-item .search-content .value-input,
@@ -239,6 +234,9 @@ body .btn {
 #main .right-panel .param-panel .search-item .search-content .selector ul {
   width: 274px;
   text-align: center;
+}
+#main .right-panel .param-panel .search-item .search-label {
+  width: 100px;
 }
 #main .right-panel .data-panel .summary-panel {
   overflow: hidden;
@@ -319,4 +317,29 @@ body .btn {
 }
 #main .right-panel .data-panel .data-list .operations a:hover {
   text-decoration: none;
+}
+#main .right-panel .operation-panel .operation-btn {
+  display: block;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #00ccff;
+  font-weight: normal;
+  font-size: 14.03px;
+  color: #fff;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-align: center;
+  border: 0px;
+  padding: 0px;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+#main .right-panel .operation-panel .operation-btn:active {
+  background-color: #CFCFCF;
 }

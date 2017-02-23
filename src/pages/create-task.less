@@ -5,6 +5,7 @@
 #main {
     .right-panel {
         font-size: 13px;
+        padding-bottom: 100px;
 
         hr {
             border-color: #ABABAB;
@@ -69,8 +70,6 @@
                     margin-right: 0px;
 
                     .search-content {
-                        width: 634px;
-
                         .value-input {
                             width: 272px;
                             display: inline-block;
@@ -131,6 +130,14 @@
                             text-align: center;
                         }
                     }
+                }
+            }
+        }
+
+        .param-panel {
+            .search-item {
+                .search-label {
+                    width: 100px;
                 }
             }
         }
@@ -246,5 +253,24 @@
                 // }
             }
         }
+
+        .operation-panel {
+            .operation-btn {
+                .btn (@btn-width: 130px, @btn-height: 30px, @btn-font-size: @btn-font-size, @btn-border-radius: 15px, @btn-font-color: #fff, @btn-bg-color: rgba(0, 204, 255, 1));
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+

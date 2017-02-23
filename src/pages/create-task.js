@@ -65,5 +65,30 @@
         value: "#course-id",               // 下拉框组件内部保存被选中项value的元素的id选择器，要带#号
     })
 
+    $(document).on("click", ".delete-btn", function(e) {
+        var $elem = $(e.currentTarget);
+
+        $elem.parent().parent().fadeOut(function() {
+            $elem.remove()
+        });
+    })
+
+    $("#multi-delete-btn").click(function() {
+        for(var i = 0, length = checkboxes.length; i < length; i ++) {
+            var checkbox = checkboxes[i]
+
+            if(checkbox.getStatus()) {
+                $elem = checkbox.$el.checkbox.parent().parent().parent()
+
+                $elem.fadeOut(function($elem) {
+                    return function() {
+                        $elem.remove()
+                    }
+                }($elem))
+            }
+        }
+    });
+
+
 }(window, jQuery));
 
