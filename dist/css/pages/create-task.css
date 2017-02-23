@@ -173,6 +173,12 @@ body .btn {
   display: block;
   margin-right: 0px;
 }
+#main .right-panel .search-panel .search-item.value-item .search-content,
+#main .right-panel .param-panel .search-item.value-item .search-content,
+#main .right-panel .search-panel .search-item.date-item .search-content,
+#main .right-panel .param-panel .search-item.date-item .search-content {
+  width: 636px;
+}
 #main .right-panel .search-panel .search-item.value-item .search-content .value-input,
 #main .right-panel .param-panel .search-item.value-item .search-content .value-input,
 #main .right-panel .search-panel .search-item.date-item .search-content .value-input,
@@ -193,6 +199,10 @@ body .btn {
 #main .right-panel .param-panel .search-item.date-item .search-content .form-date {
   display: inline-block;
   width: 272px;
+}
+#main .right-panel .search-panel .search-item.end-date-item .search-content,
+#main .right-panel .param-panel .search-item.end-date-item .search-content {
+  width: 300px;
 }
 #main .right-panel .search-panel .search-item .search-label,
 #main .right-panel .param-panel .search-item .search-label {
